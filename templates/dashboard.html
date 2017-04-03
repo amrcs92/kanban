@@ -11,8 +11,8 @@
             <div class="modal-body">
                 <form id="addtask" class="form-horizontal form-addTask" novalidate name="addtask" ng-submit="addTask(addtask.$valid);submitted = true ;">
                     <div class="form-group">
-                        <label class="control-label">Task Title</label>
-                        <input name="name" class="form-control" required ng-model = "newTask.name" ng-maxlength="45">
+                        <label class="control-label">*Task Title</label>
+                        <input name="name" class="form-control" required ng-model = "newTask.name" ng-maxlength="45" placeholder="please enter task title">
                     </div>
 
                     <span class="validation" ng-if = "addtask.name.$error.required && submitted "  >Task title cannot be empty !
@@ -20,20 +20,20 @@
                     <span class="validation" ng-if = "addtask.name.$error.maxlength && submitted " >Task title cannot be more than 45 characters !</span>
 
                     <div class="form-group">
-                        <label class="control-label">Task Description</label>
-                        <input name="desc" class="form-control" required ng-model = "newTask.Desc" ng-maxlength="200">
+                        <label class="control-label">*Task Description</label>
+                        <input name="desc" class="form-control" required ng-model = "newTask.Desc" ng-maxlength="200" placeholder="please enter task description">
                     </div>
 
                     <span class="validation" ng-if = "addtask.desc.$error.required && submitted " >Task Description cannot be empty !</span>
                     <span class="validation" ng-if = "addtask.desc.$error.maxlength  && submitted " >Task Description cannot be more than 200 characters !</span>
 
                     <div class="form-group">
-                        <label class="control-label">Task dueDate</label>
-                        <input name="dueDate" class="form-control" ng-model = "newTask.dueDate">
+                        <label class="control-label">*Task dueDate</label>
+                        <input name="dueDate" class="form-control" ng-model = "newTask.dueDate" placeholder="YYYY-MM-DD">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label">Task Priority</label><br>
+                        <label class="control-label">*Task Priority</label><br>
                     </div>
                     <div class="form-group col-xs-4">
                         <label class="control-label">Low Priority</label>
@@ -54,7 +54,7 @@
                     
                     <div class="form-group col-xs-12">
                         <hr/>
-                        <label class="control-label">Task status</label><br>
+                        <label class="control-label">*Task status</label><br>
                     
                         <select class="form-control" required ng-model = "newTask.status">
                                 <option name="status" selected value="todo">todo</option>
@@ -88,8 +88,8 @@
             <div class="modal-body">
                 <form class="form-horizontal form-addTask" novalidate name="updatetask" ng-submit="editTask(updatetask.$valid,editedtask);submitted = true ;">
                     <div class="form-group">
-                        <label class="control-label">Task Title</label>
-                        <input name="name" class="form-control" required ng-model = "editedtask.taskName" ng-maxlength="45">
+                        <label class="control-label">*Task Title</label>
+                        <input name="name" class="form-control" required ng-model = "editedtask.taskName" ng-maxlength="45" placeholder="please enter task title">
                     </div>
 
                     <span class="validation" ng-if = "updatetask.name.$error.required && submitted " >Task title cannot be empty !
@@ -97,20 +97,20 @@
                     <span class="validation" ng-if = "updatetask.name.$error.maxlength && submitted " >Task title cannot be more than 45 characters !</span>
 
                     <div class="form-group">
-                        <label class="control-label">Task Description</label>
-                        <input name="desc" class="form-control" required ng-model = "editedtask.taskDescription" ng-maxlength="200">
+                        <label class="control-label">*Task Description</label>
+                        <input name="desc" class="form-control" required ng-model = "editedtask.taskDescription" ng-maxlength="200" placeholder="please enter task description">
                     </div>
 
                     <span class="validation" ng-if = "updatetask.desc.$error.required && submitted " >Task Description cannot be empty !</span>
                     <span class="validation" ng-if = "updatetask.desc.$error.maxlength  && submitted " >Task Description cannot be more than 200 characters !</span>
 
                     <div class="form-group">
-                        <label class="control-label">Task dueDate</label>
-                        <input name="dueDate" class="form-control" ng-model = "editedtask.taskDue">
+                        <label class="control-label">*Task dueDate</label>
+                        <input name="dueDate" class="form-control" ng-model = "editedtask.taskDue" placeholder="YYYY-MM-DD">
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label">Task Priority</label>
+                        <label class="control-label">*Task Priority</label>
                     </div>
 
                     <div class="form-group">
@@ -134,7 +134,7 @@
                     <span class="validation" ng-if = "updatetask.priority.$error.required && submitted ">Task Priority cannot be empty !</span>
 
                     <div ng-hide="true" class="form-group">
-                        <label class="control-label">Task status</label>
+                        <label class="control-label">*Task status</label>
                         <!-- <input name="status" class="form-control" required ng-model = "editedtask.taskStatus" > -->
                         <select class="form-control" required ng-model = "editedtask.taskStatus">
                             <option name="status" value="todo">todo</option>

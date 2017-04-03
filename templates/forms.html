@@ -12,14 +12,14 @@
 					<h1 class="text-info text-center">Signup <span class="glyphicon glyphicon-new-window"></span></h1>
 					<label class="control-label col-md-3">Name:</label>
 				    	<div class="col-md-9">
-				  	 		<input type="text" name="name" required maxlength="45" class="form-control" ng-model="user.userName">
+				  	 		<input type="text" name="name" required maxlength="45" class="form-control" ng-model="user.userName" placeholder="Please enter your name">
 				  	 		<p ng-if="signupForm.name.$error.required && submitted">You haven't entered your name</p>
 				  	 	</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-md-3">Email:</label>
 				    	<div class="col-md-9">
-				  	 		<input type="email" name="email" required maxlength="45" class="form-control" ng-model="user.userEmail">
+				  	 		<input type="email" name="email" required maxlength="45" class="form-control" ng-model="user.userEmail" placeholder="Please enter your email">
 				  	 		<p ng-if="signupForm.email.$error.required && submitted">You haven't entered your email</p>
 				  	 		<p ng-if="signupForm.email.$error.email && submitted">not valid email format</p>
 				  	 	</div>
@@ -27,20 +27,20 @@
 				<div class="form-group">
 					<label class="control-label col-md-3">Password:</label>
 				    	<div class="col-md-9">
-				  	 		<input type="password" name="password" required maxlength="25" class="form-control" ng-model="user.password">
+				  	 		<input type="password" name="password" required maxlength="25" class="form-control" ng-model="user.password" placeholder="Please enter your password">
 				  	 		<p ng-if="signupForm.password.$error.required && submitted">You haven't entered your password</p>
 				  	 	</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-md-3">Phone:</label>
 				    	<div class="col-md-9">
-				  	 		<input type="text" class="form-control" ng-model="user.userPhone">
+				  	 		<input type="text" class="form-control" ng-model="user.userPhone" placeholder="please enter you 11 digit phone">
 				  	 	</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-md-3">Birth Date:</label>
 				    	<div class="col-md-9">
-				  	 		<input type="text" class="form-control" ng-model="user.birthDate">
+				  	 		<input type="text" class="form-control" ng-model="user.birthDate" placeholder="YYYY-MM-DD">
 				  	 	</div>
 				</div>
 				<div class="form-group">
@@ -63,7 +63,7 @@
 				<div class="form-group">
 					<label class="control-label col-md-3">Email:</label>
 				    	<div class="col-md-9">
-				  	 		<input type="email" name="email" required maxlength="45" class="form-control" ng-model="regEmail">
+				  	 		<input type="email" name="email" required maxlength="45" class="form-control" ng-model="regEmail" placeholder="Please enter your email">
 				  	 		<p ng-if="loginForm.email.$error.required && log_submited">Your haven't Entered your email</p>
 				  	 		<p ng-if="loginForm.email.$error.email && log_submited">not valid email format</p>
 				  	 	</div>
@@ -71,7 +71,7 @@
 				<div class="form-group">
 					<label class="control-label col-md-3">Password:</label>
 				    	<div class="col-md-9">
-				  	 		<input type="password" name="password" required maxlength="25" class="form-control" ng-model="regPassword">
+				  	 		<input type="password" name="password" required maxlength="25" class="form-control" ng-model="regPassword" placeholder="Please enter your password">
 				  	 		<p ng-if="loginForm.password.$error.required && log_submited">Your haven't Entered your password</p>
 				  	 	</div>
 				</div>
